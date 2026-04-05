@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeri Gambar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Galeri Foto</h2>
+    <div class="preview">
+      <img id="mainImage" src="https://picsum.photos/id/1/400/300" alt="Preview">
+    </div>
+    <div class="thumbnails">
+      <img src="https://picsum.photos/id/1/400/300" onclick="changeImage(this.src)">
+      <img src="https://picsum.photos/id/2/400/300" onclick="changeImage(this.src)">
+      <img src="https://picsum.photos/id/3/400/300" onclick="changeImage(this.src)">
+      <img src="https://picsum.photos/id/4/400/300" onclick="changeImage(this.src)">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Validasi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Form Pendaftaran</h2>
+    <div id="message"></div>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Nama (min 3 karakter)" />
+      <div id="nameError" class="error"></div>
+      
+      <input type="text" id="email" placeholder="Email (harus ada @)" />
+      <div id="emailError" class="error"></div>
+      
+      <input type="number" id="age" placeholder="Umur (1-120)" />
+      <div id="ageError" class="error"></div>
+      
+      <button type="button" onclick="validateForm()">Kirim</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

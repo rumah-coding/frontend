@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Object Playground</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Student JSON Playground</h1>
+
+<div class="card">
+<h2>Add Student</h2>
+
+<input id="name" placeholder="Student Name">
+<input id="age" type="number" placeholder="Age">
+<input id="major" placeholder="Major">
+
+<button onclick="addStudent()">Add Student</button>
+
+</div>
+
+<div class="card">
+<h2>Student List (Object View)</h2>
+<div id="students"></div>
+</div>
+
+<div class="card">
+<h2>JSON View (Stringify Result)</h2>
+<pre id="jsonOutput"></pre>
+</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

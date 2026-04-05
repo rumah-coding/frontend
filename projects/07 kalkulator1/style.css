@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .judul {
+    text-align: center;
+    color: white;
+    font-size: 10px
+
+        /* margin-bottom: 20px; */
+;
+  }
+ 
+  .calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    width: 320px; /* Lebar tetap agar tata letak konsisten */
+  }
+  
+  #display {
+    width: 100%;
+    height: 70px;
+    font-size: 28px;
+    text-align: right;
+    padding: 0 15px; /* Padding kiri & kanan sama */
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box; /* Penting! Agar padding tidak menambah lebar */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  button {
+    width: 100%;
+    height: 65px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  button:active {
+    background-color: #444;
+  }
+  
+  .equals {
+    background-color: #ff9500;
+  }
+  
+  .equals:hover {
+    background-color: #ffaa33;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
